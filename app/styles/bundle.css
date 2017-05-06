@@ -9,38 +9,6 @@ body {
   min-height: 100%;
   font-family: 'PT Sans', sans-serif;
 }
-
-.nav {
-  width: 5em;
-}
-
-.nav__menu {
-  height: 100vh;
-  margin: 0;
-  background: red;
-  padding: 10px 0px;
-  list-style: none;
-}
-
-.nav__item {
-  margin: 1.5em 0.9em;
-  cursor: pointer;
-  position: relative;
-  height: auto;
-  display: block;
-}
-
-.nav__item a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1em;
-  display: block;
-  text-align: center;
-}
-
-.nav .icon {
-  height: 2em;
-}
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document

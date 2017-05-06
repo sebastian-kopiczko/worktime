@@ -11,7 +11,7 @@ gulp.task('concat', function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('app/assets/scss/main.scss').pipe(sass().on('error', sass.logError)).pipe(autoprefixer()).pipe(gulp.dest('app/assets/css')).pipe(browserSync.reload({
+    return gulp.src('app/assets/scss/styles.scss').pipe(sass().on('error', sass.logError)).pipe(autoprefixer()).pipe(gulp.dest('app/assets/css')).pipe(browserSync.reload({
         stream: true
     }));
 });
@@ -22,7 +22,7 @@ gulp.task('browserSync', function () {
         },
     })
 })
-gulp.task('watch', ['browserSync', 'sass', 'concat'], function () {
+gulp.task('watch', ['browserSync', 'sass'], function () {
     gulp.watch('app/assets/scss/**/*.scss', ['sass']);
     gulp.watch('app/views/**/*.html', browserSync.reload);
 });
