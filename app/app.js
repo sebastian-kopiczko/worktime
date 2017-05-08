@@ -1,7 +1,8 @@
-angular.module('workTimeApp', [])
+angular.module('workTimeApp', ['workTimeApp'])
     .controller('mainCtrl', function ($scope) {
-        $scope.hiho = function () {
-            console.log('fyrka');
+        $scope.isPushed = true;
+        $scope.pushMenu = function ($scope) {
+            $scope.isPushed = !$scope.isPushed;
+            console.log('ok');
         }
-
-    })
+    });
