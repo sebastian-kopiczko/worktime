@@ -7,7 +7,7 @@
     height: 100vh;
     color: #fff;
     background: $dark;
-    position: relative;
+    position: fixed;
     transition: .5s ease-in; // transform: translateX(0%);
     &__menu-btn {
         border: none;

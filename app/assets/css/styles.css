@@ -59,7 +59,7 @@ body {
   height: 100vh;
   color: #fff;
   background: #161616;
-  position: relative;
+  position: fixed;
   transition: .5s ease-in; }
   .nav__menu-btn {
     border: none;

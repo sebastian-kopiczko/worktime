@@ -1,6 +1,6 @@
 <nav class="nav" ng-class="{'menu-push' : isPushed}">
 
-    <a class="hamburger-icon" href="#" title="Menu" ng-click="isPushed=!isPushed" ng-class="{'active' : !isPushed}">
+    <a class="hamburger-icon" href="" title="Menu" ng-click="isPushed=!isPushed" ng-class="{'active' : !isPushed}">
         <span class="line line-1"></span>
         <span class="line line-2"></span>
         <span class="line line-3"></span>
@@ -14,21 +14,21 @@
     <ul class="nav__menu">
 
         <li class="nav__item">
-            <a href="" ng-click="isPushed=!isPushed"><img class="icon icon-home" alt="home icon" src="../assets/nav icons/003-home.svg"></img>
+            <a href="#home" ng-click="isPushed=!isPushed"><img class="icon icon-home" alt="home icon" src="../assets/nav icons/003-home.svg"></img>
                 <span>Home</span></a>
         </li>
         <li class="nav__item">
-            <a href="" ng-click="isPushed=!isPushed">
+            <a href="#chatbot" ng-click="isPushed=!isPushed">
                 <img class="icon icon-chat" alt="chat icon" src="../assets/nav icons/002-chat.svg"></img>
                 <span class="span-chatbot">Chatbot</span></a>
         </li>
         <li class="nav__item" ng-click="isPushed=!isPushed">
-            <a href="">
+            <a href="#charts">
                 <img class="icon icon-chart" alt="charts icon" src="../assets/nav icons/001-business.svg"></img>
                 <span>Charts</span></a>
         </li>
         <li class="nav__item" ng-click="isPushed=!isPushed">
-            <a href="">
+            <a href="#help">
                 <img class="icon icon-chart" alt="charts icon" src="../assets/nav icons/help.svg"></img>
                 <span class="span-help">Help</span></a>
         </li>
