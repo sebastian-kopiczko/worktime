@@ -20,6 +20,10 @@ workTimeApp.controller('helpCtrl', function ($scope) {
 
 workTimeApp.config(function ($routeProvider) {
     $routeProvider
+        .when('/', {
+            templateUrl: 'templates/start.html',
+            controller: 'mainCtrl'
+        })
         .when('/home', {
             templateUrl: 'templates/home.html',
             controller: 'mainCtrl'
@@ -35,5 +39,8 @@ workTimeApp.config(function ($routeProvider) {
         .when('/help', {
             templateUrl: 'templates/help.html',
             controller: 'helpCtrl'
+        })
+        .otherwise({
+            redirectTo: 'templates/home.html'
         });
 });

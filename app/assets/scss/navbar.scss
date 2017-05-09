@@ -74,16 +74,8 @@
                 align-items: center;
                 margin-left: 0.5em;
             }
-        } // &:first-child {
-        //     margin-top: 0;
-        // }
-        // &:last-child {
-        //     span {
-        //         margin-top: 0.7em;
-        //     }
-        // }
+        }
         &:hover {
-            // border-right: 2px solid $yellow;
             border-bottom-color: $yellow;
             background: $item-active;
         }
@@ -99,6 +91,19 @@
     }
     .icon {
         height: 2em;
+    }
+    @media (max-height: 405px) and (orientation: landscape) {
+        &__user-details {
+            .user-name {
+                display: none;
+            }
+        }
+        &__menu {
+            transform: translateY(-20%);
+        }
+        &__logout {
+            margin: 0;
+        }
     }
 }
 
