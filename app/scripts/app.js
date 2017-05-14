@@ -1,30 +1,32 @@
 var workTimeApp = angular.module('workTimeApp', ['ngRoute']);
 
-window.fbAsyncInit = function () {
-    FB.init({
-        appId: '1707530042880474',
-        xfbml: true,
-        cookie: true,
-        version: 'v2.9'
-    });
-    FB.AppEvents.logPageView();
-};
-
-(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {
-        return;
-    }
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
 
 
 
 workTimeApp.controller('mainCtrl', ['$scope', function ($scope) {
     $scope.isPushed = true;
+    $scope.FBLogin = function () {
+        FB.login(function (response) {
+            if (response.status === 'connected') {
+                console.log('Logged into your app and Facebook.');
+                FB.api('/me', function (response) {
+                    console.log(response);
+                    console.log('Successful login for: ' + response.name);
+                    console.log('Thanks for logging in, ' + response.name + '!');
+                });
+                var accessToken = FB.getAuthResponse();
+                console.log(accessToken);
+            } else {
+                console.log('The person is not logged into this app or we are unable to tell. ');
+            }
+        });
+
+    }
+    $scope.FBLogout = function () {
+        FB.logout(function (response) {
+            console.log('Person is now logged out');
+        });
+    }
 }]);
 
 workTimeApp.controller('chatbotCtrl', function ($scope) {
