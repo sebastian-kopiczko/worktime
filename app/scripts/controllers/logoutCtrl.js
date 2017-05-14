@@ -1,0 +1,1 @@
+workTimeApp.controller('startCtrl', ['$scope', '$window', function ($scope, $window) {}]);

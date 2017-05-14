@@ -20,6 +20,10 @@ workTimeApp.config(function ($routeProvider) {
             templateUrl: 'templates/help.html',
             controller: 'helpCtrl'
         })
+        .when('/logout', {
+            templateUrl: 'templates/logout.html',
+            controller: 'logoutCtrl'
+        })
         .otherwise({
             redirectTo: 'templates/home.html'
         });
