@@ -9,22 +9,16 @@ workTimeApp.controller('mainCtrl', ['$scope', '$location', '$rootScope', functio
 
         FB.login(function (response) {
             var loggedIn;
-
             if (response.status === 'connected') {
-                console.log('Logged into your app and Facebook.');
                 FB.api('/me', function (response) {
-                    console.log(response);
-                    console.log('Successful login for: ' + response.name);
-                    console.log('Thanks for logging in, ' + response.name + '!');
+                    console.log('Zalogowano pomyślnie użytkownika: ' + response.name);
                 });
                 var accessToken = FB.getAuthResponse();
-                console.log(accessToken);
                 $rootScope.$apply(function () {
                     $location.path("/home");
                 });
-                console.log($location);
             } else {
-                console.log('The person is not logged into this app or we are unable to tell. ');
+                console.log('Logowanie nie powiodło się.');
             }
         });
 
