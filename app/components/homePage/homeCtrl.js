@@ -1,3 +1,3 @@
 workTimeApp.controller('homeCtrl', ['$scope', function ($scope) {
-    console.log('home ctrl ok')
+    console.log('homectrl ok')
 }]);

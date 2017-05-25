@@ -10,8 +10,6 @@ workTimeApp.service('LoginService', ['$window', function ($window) {
                 });
                 var accessToken = FB.getAuthResponse();
                 // console.log(accessToken);
-
-
             } else {
                 console.log('The person is not logged into this app or we are unable to tell. ');
             }

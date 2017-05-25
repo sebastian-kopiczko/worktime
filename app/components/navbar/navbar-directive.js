@@ -1,6 +1,5 @@
-angular.module('workTimeApp')
-    .directive('navbar', function () {
-        return {
-            templateUrl: '/navbar.html'
-        }
-    })
+workTimeApp.directive('navbar', function () {
+    return {
+        templateUrl: '../../templates/navbar.html'
+    }
+})

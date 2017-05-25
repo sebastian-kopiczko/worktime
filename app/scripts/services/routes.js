@@ -1,28 +1,19 @@
 workTimeApp.config(function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '../../components/startPage/startPage.html',
-            controller: 'startCtrl'
+            templateUrl: '../../components/startPage/startPage.html'
         })
         .when('/home', {
-            templateUrl: '../../components/homePage/homePage.html',
-            controller: 'homeCtrl'
+            templateUrl: '../../components/homePage/homePage.html'
         })
         .when('/chat', {
-            templateUrl: '../../components/homePage/chatPage.html',
-            controller: 'chatbotCtrl'
+            templateUrl: '../../components/chatPage/chatPage.html'
         })
         .when('/charts', {
-            templateUrl: '../../components / homePage / homePage.html',
-            controller: 'chartsCtrl'
+            templateUrl: '../../components/chartPage/chartPage.html'
         })
         .when('/help', {
-            templateUrl: '../../components/homePage/homePage.html',
-            controller: 'helpCtrl'
-        })
-        .when('/logout', {
-            templateUrl: '../../components/homePage/homePage.html',
-            controller: 'logoutCtrl'
+            templateUrl: '../../components/helpPage/helpPage.html'
         })
         .otherwise({
             redirectTo: '../../components/startPage/startPage.html'
