@@ -8,6 +8,7 @@
     color: #fff;
     background: $dark;
     position: fixed;
+    box-shadow: 2px 0px 2px 0px rgba(253, 203, 2, .5);
     transition: .5s ease-in; // transform: translateX(0%);
     &__menu-btn {
         border: none;
@@ -110,8 +111,6 @@
 .menu-push {
     transform: translateX(-100%);
 }
-
-
 
 .rotate-btn {
     transform: rotateY(0deg);

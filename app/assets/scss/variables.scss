@@ -5,7 +5,3 @@ $item-active: #282828;
 $item-inactive: #354052;
 $dark: #161616;
 $yellow: #FDCA02;
-@mixin btn-active {
-    border-bottom-color: $yellow;
-    background: $item-active;
-}

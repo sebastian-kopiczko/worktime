@@ -1,0 +1,57 @@
+.home-page {
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    font-weight: 300;
+    background-image: url('../bg-diamond.png');
+    &__header {
+        padding-top: 1em;
+        text-align: center;
+        h2 {
+            margin-bottom: .5em;
+            color: $yellow;
+            font: {
+                size: 1.7em;
+                weight: 300;
+            }
+        }
+    }
+    .intro {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        &__line {
+            width: 1px;
+            height: 3em;
+            background: rgba(255, 255, 255, 0.5);
+            position: relative;
+            margin-bottom: 1em;
+            &::after {
+                content: '';
+                display: block;
+                width: .7em;
+                height: .7em;
+                background: #dedede;
+                position: absolute;
+                bottom: -.35em;
+                right: -.35em;
+            }
+        }
+    }
+    .content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        &__title {
+            width: 100%;
+            text-align: center;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            color: $yellow;
+        }
+        &__text {
+            margin-top: .5em;
+        }
+    }
+}

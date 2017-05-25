@@ -1,0 +1,4 @@
+@mixin btn-active {
+    border-bottom-color: $yellow;
+    background: $item-active;
+}
