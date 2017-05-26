@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
-
+    <link rel="icon" href="assets/nav icons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <!--CONCAT FILES!!! AND CHANGE HREF TO STYLES <link rel="stylesheet" href="styles/bundle.css"> -->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -38,6 +38,46 @@
     <script>
         new WOW().init();
     </script>
+
+
+
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1707530042880474',
+                xfbml: true,
+                version: 'v2.6'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <h1>Messenger Demo</h1>
+
+    <div>
+        <p>The "Send to Messenger" plugin will trigger an authentication callback to your webhook.</p>
+
+        <div class="fb-send-to-messenger" messenger_app_id='APP_ID' page_id='PAGE_ID' data-ref="PASS_THROUGH_PARAM" color="blue"
+            size="standard">
+        </div>
+    </div>
+
+    <div>
+        <p>The "Message Us" plugin takes the user directly to Messenger and into a thread with your Page.</p>
+
+        <div class="fb-messengermessageus" messenger_app_id='APP_ID' page_id='PAGE_ID' color="blue" size="standard">
+        </div>
+    </div>
 </body>
 
 </html>

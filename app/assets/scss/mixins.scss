@@ -2,3 +2,16 @@
     border-bottom-color: $yellow;
     background: $item-active;
 }
+
+@mixin main-bg {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    font-weight: 300;
+    background: {
+        image: url('../bg-diamond.png');
+        repeat: repeat;
+        size: auto;
+    }
+}

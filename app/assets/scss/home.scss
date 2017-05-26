@@ -1,9 +1,6 @@
+@import 'mixins';
 .home-page {
-    height: 100vh;
-    width: 100%;
-    color: #fff;
-    font-weight: 300;
-    background-image: url('../bg-diamond.png');
+    @include main-bg;
     &__header {
         padding-top: 1em;
         text-align: center;

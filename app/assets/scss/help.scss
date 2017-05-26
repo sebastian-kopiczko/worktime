@@ -1,0 +1,35 @@
+@import 'mixins';
+.help-page {
+    @include main-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &__header {
+        margin-top: 1em;
+        color: $yellow;
+        align-self: center;
+        h2 {
+            font: {
+                weight: 300;
+                size: 1.7em;
+            }
+        }
+    }
+    &__title {
+        display: inline-block;
+        font-size: 1.2em;
+        margin: 0 1em;
+    }
+    .faq {
+        .list {
+            padding-right: 1em;
+            &__item {
+                margin: .3em 0;
+            }
+        }
+    }
+    .yellow-italic {
+        color: $yellow;
+        font-style: italic;
+    }
+}

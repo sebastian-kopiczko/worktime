@@ -8,8 +8,8 @@
     color: #fff;
     background: $dark;
     position: fixed;
-    box-shadow: 2px 0px 2px 0px rgba(253, 203, 2, .5);
-    transition: .5s ease-in; // transform: translateX(0%);
+    box-shadow: 1px 0px 2px 0px rgba(253, 203, 2, .5);
+    transition: .5s ease-in; 
     &__menu-btn {
         border: none;
         position: absolute;
