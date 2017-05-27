@@ -3,6 +3,11 @@
     background: $item-active;
 }
 
+@mixin yellow-italic {
+    color: $yellow;
+    font-style: italic;
+}
+
 @mixin main-bg {
     min-height: 100vh;
     height: auto;

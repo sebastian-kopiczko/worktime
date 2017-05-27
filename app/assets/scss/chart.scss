@@ -1,0 +1,24 @@
+@import 'mixins';
+.chart-page {
+    @include main-bg;
+    &__heading {
+        width: 100%;
+        text-align: center;
+        padding-top: 2.3em;
+        h2 {
+            font: {
+                size: 1.3em;
+                weight: 300;
+            }
+        }
+        span {
+            @include yellow-italic;
+        }
+    }
+    &__header {
+        text-align: center;
+    }
+    &__chart {
+        width: 100%;
+    }
+}

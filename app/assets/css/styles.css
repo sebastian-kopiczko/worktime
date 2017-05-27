@@ -36,18 +36,19 @@ body {
       top: 50%; }
     .hamburger-icon .line.line-3 {
       top: 100%; }
-  .hamburger-icon.active .line-1 {
+  .hamburger-icon.active-menuBtn .line-1 {
     transform: translateY(0.6em) translateX(0) rotate(45deg);
     -webkit-transform: translateY(0.6em) translateX(0) rotate(45deg);
     -moz-transform: translateY(0.6em) translateX(0) rotate(45deg); }
-  .hamburger-icon.active .line-2 {
+  .hamburger-icon.active-menuBtn .line-2 {
     opacity: 0; }
-  .hamburger-icon.active .line-3 {
+  .hamburger-icon.active-menuBtn .line-3 {
     transform: translateY(-0.6em) translateX(0) rotate(-45deg);
     -webkit-transform: translateY(-0.6em) translateX(0) rotate(-45deg);
     -moz-transform: translateY(-0.6em) translateX(0) rotate(-45deg); }
 
 .nav {
+  z-index: 2;
   width: 7em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,6 +181,10 @@ body {
 .rotate-btn {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg); }
+
+.active-tab {
+  border-bottom-color: #FDCA02;
+  background: #282828; }
 
 .start-page {
   width: 100%;
@@ -363,7 +368,55 @@ body {
   .help-page .faq .list {
     padding-right: 1em; }
     .help-page .faq .list__item {
-      margin: .3em 0; }
+      margin: .3em 0;
+      line-height: 1.45; }
   .help-page .yellow-italic {
     color: #FDCA02;
     font-style: italic; }
+
+.chart-page {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  color: #fff;
+  font-weight: 300;
+  background-image: url("../bg-diamond.png");
+  background-repeat: repeat;
+  background-size: auto; }
+  .chart-page__heading {
+    width: 100%;
+    text-align: center;
+    padding-top: 2.3em; }
+    .chart-page__heading h2 {
+      font-size: 1.3em;
+      font-weight: 300; }
+    .chart-page__heading span {
+      color: #FDCA02;
+      font-style: italic; }
+  .chart-page__header {
+    text-align: center; }
+  .chart-page__chart {
+    width: 100%; }
+
+.chat-page {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  color: #fff;
+  font-weight: 300;
+  background-image: url("../bg-diamond.png");
+  background-repeat: repeat;
+  background-size: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5em;
+  min-height: 100%;
+  height: auto; }

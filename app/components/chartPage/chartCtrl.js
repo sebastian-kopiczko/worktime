@@ -1,3 +1,6 @@
-workTimeApp.controller('chartCtrl', ['$scope', function ($scope) {
-    console.log('chart ctrl ok')
+workTimeApp.controller('chartCtrl', ['$scope', 'ChartService', function ($scope, ChartService) {
+    $scope.newChart = function () {
+        ChartService.generateChart();
+    }
+    $scope.today = new Date();
 }]);

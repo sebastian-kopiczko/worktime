@@ -1,5 +1,6 @@
 @import 'menu-btn';
 .nav {
+    z-index: 2;
     width: 7em;
     display: flex;
     flex-direction: column;
@@ -9,7 +10,7 @@
     background: $dark;
     position: fixed;
     box-shadow: 1px 0px 2px 0px rgba(253, 203, 2, .5);
-    transition: .5s ease-in; 
+    transition: .5s ease-in;
     &__menu-btn {
         border: none;
         position: absolute;
@@ -114,4 +115,9 @@
 
 .rotate-btn {
     transform: rotateY(0deg);
+}
+
+.active-tab {
+    border-bottom-color: $yellow;
+    background: $item-active;
 }

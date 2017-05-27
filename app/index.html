@@ -31,53 +31,20 @@
 
     <script src="/components/chatPage/chatCtrl.js" type="text/javascript"></script>
     <script src="/components/chartPage/chartCtrl.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/components/chartPage/chartService.js" type="text/javascript"></script>
+
     <script src="/components/helpPage/helpCtrl.js" type="text/javascript"></script>
     <script src="/components/homePage/homeCtrl.js" type="text/javascript"></script>
 
-    <script src="js/wow.min.js"></script>
+    <!--<script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
-    </script>
+    </script>-->
 
 
 
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '1707530042880474',
-                xfbml: true,
-                version: 'v2.6'
-            });
-        };
 
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <h1>Messenger Demo</h1>
-
-    <div>
-        <p>The "Send to Messenger" plugin will trigger an authentication callback to your webhook.</p>
-
-        <div class="fb-send-to-messenger" messenger_app_id='APP_ID' page_id='PAGE_ID' data-ref="PASS_THROUGH_PARAM" color="blue"
-            size="standard">
-        </div>
-    </div>
-
-    <div>
-        <p>The "Message Us" plugin takes the user directly to Messenger and into a thread with your Page.</p>
-
-        <div class="fb-messengermessageus" messenger_app_id='APP_ID' page_id='PAGE_ID' color="blue" size="standard">
-        </div>
-    </div>
 </body>
 
 </html>

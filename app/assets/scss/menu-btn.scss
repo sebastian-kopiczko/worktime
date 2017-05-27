@@ -35,7 +35,7 @@ $translateX: 0;
             top: 100%;
         }
     }
-    &.active {
+    &.active-menuBtn {
         .line-1 {
             transform: translateY($translateY) translateX($translateX) rotate($rotation);
             -webkit-transform: translateY($translateY) translateX($translateX) rotate($rotation);

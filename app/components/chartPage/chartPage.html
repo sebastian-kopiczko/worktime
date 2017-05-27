@@ -1,4 +1,10 @@
 <navbar></navbar>
 <div class="chart-page" ng-controller="chartCtrl">
-    <h2> chartpage </h2>
+    <div class="chart-page__heading">
+        <h2 ng-click="newChart()">Diagram kołowy przedstawiający zadania w dniu <span>{{today | date:"dd/MM/yyyy"}}</span></h2>
+
+    </div>
+
+    <div id="chart_div" class="chart-page__chart"></div>
+
 </div>

@@ -25,11 +25,11 @@
             padding-right: 1em;
             &__item {
                 margin: .3em 0;
+                line-height: 1.45;
             }
         }
     }
     .yellow-italic {
-        color: $yellow;
-        font-style: italic;
+        @include yellow-italic;
     }
 }
