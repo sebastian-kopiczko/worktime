@@ -2,7 +2,7 @@ workTimeApp.service('LogoutService', ['$window', function ($window) {
     this.logout = function () {
         var accessToken = FB.getAuthResponse();
         return FB.logout(function (response) {
-            console.log('Person is now logged out' + localStorage);
+            console.log('Uzytkownik został wylogowany' + localStorage);
         });
     }
     this.changeView = function (view) {

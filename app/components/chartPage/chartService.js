@@ -37,8 +37,6 @@ workTimeApp.service('ChartService', ['$window', function ($window) {
                     }
                 },
                 'is3D': true,
-                'width': '100%',
-                'height': 500,
                 colors: ['#fdc23e', '#f9a11b', '#274555', '#ff7761'],
                 chartArea: {
                     width: "78%",
@@ -47,9 +45,12 @@ workTimeApp.service('ChartService', ['$window', function ($window) {
 
             };
 
-            // Instantiate and draw our chart, passing in some options.
+            // Instantiate and draw our chart, passing in some options.     
+
+            google.charts.setOnLoadCallback(drawChart);
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
             chart.draw(data, options);
+
         }
     }
 
